@@ -16,9 +16,15 @@
 #heading {
     font-size: 3rem;
     color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
-#sub-heading, #scrapeBtn, .navbar-brand {
+#sub-heading, .navbar-brand {
+    color: #fff;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#scrapeBtn {
     color: #fff;
 }
 
