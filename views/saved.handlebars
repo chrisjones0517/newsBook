@@ -1,0 +1,52 @@
+
+{{> _savedNavbar}}
+{{> _banner}}
+
+<div class="article-container">
+{{#each saved}}
+    <div class="pt-5 article-box">
+        <div class="card bg-light">
+            <div class="card-header">
+                <div class="saved-article-header-div">
+                    <h3>
+                        <a class="url-link saved-article-link" href="{{this.url}}" target="_blank">{{this.heading}}</a>
+                    </h3>
+                </div>
+                <div class="d-inline-block float-right saved-article-button-div">
+                    <button class="btn btn-danger delete-article-btn mr-2 delete-article-btn">DELETE</button>
+                    <button class="btn btn-success comment-btn">COMMENTS</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{this.summary}}</p>
+            </div>
+        </div>
+    </div>
+{{/each}}
+</div> 
+
+<div id="comments-modal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Comments about Article:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="comment-heading-body" class="modal-body">
+        <h6 id="article-heading"></h6>
+      </div>
+      <div class="modal-body comment-display">
+          {{!-- comments go here --}} 
+      </div>
+      <div class="modal-body">
+        <textarea type="textarea" id="comment-input" placeholder="Place comments here..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn modal-dismiss" data-dismiss="modal">CLOSE</button>
+        <button type="button" class="btn btn-success save-comment">SAVE COMMENT</button>
+      </div>
+    </div>
+  </div>
+</div>

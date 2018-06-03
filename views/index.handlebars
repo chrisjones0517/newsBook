@@ -1,0 +1,43 @@
+ {{> _navbar}}
+ {{> _banner}} 
+ 
+<div class="article-container">
+{{#if news}}
+{{#each news}}
+    <div class="pt-5 article-box">
+        <div class="card bg-light">
+            <div class="card-header">
+                <h3>
+                    <a class="url-link" href="{{this.url}}" target="_blank">{{this.heading}}</a>
+                    <button class="save-article btn btn-success float-right">SAVE ARTICLE</button>
+                </h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{this.summary}}</p>
+            </div>
+        </div>
+    </div>
+{{/each}}
+{{else}}
+<h2 class="p-5">No recent articles have been scraped. Click the 'SCRAPE NEW ARTICLES' button to search for new articles.</h2>
+{{/if}}
+</div> 
+
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+            <div class="modal-header">   
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div> 
+            <div class="modal-body mx-auto">
+                <h4 id="saveMessage"></h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn modal-dismiss" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>

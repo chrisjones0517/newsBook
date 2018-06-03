@@ -1,0 +1,127 @@
+.jumbotron {
+    background-image: url('/img/wsj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #a1a1a1;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.mask {
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+#heading {
+    font-size: 3rem;
+    color: #fff;
+}
+
+#sub-heading, #scrapeBtn, .navbar-brand {
+    color: #fff;
+}
+
+.header-text {
+    padding: 12rem 0;
+}
+
+nav, .card-header {
+    background-color: #2196f3;
+}
+
+.background {
+    background-image: url('/img/creampaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.article-container {
+    margin: 0;
+    padding-bottom: 6rem;
+    width: 100%;
+}
+
+.article-box {
+    width: 90vw;
+    margin: auto;
+}
+
+.url-link {
+    color: #fff; 
+    text-decoration: none;
+    display: inline-block;
+    width: 70vw;
+}
+
+.modal-dismiss {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+.saved-article-header-div {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 75%;
+}
+
+.saved-article-button-div {
+    height:100%;
+}
+
+.saved-article-link {
+    width: 100%;
+}
+
+#comment-input {
+    width: 100%;
+}
+
+.comment-box {
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+.active {
+    background-color: #0c7cd5;
+}
+
+.nav-link {
+    padding: 1rem; 
+    color: #fff;
+}
+
+.navbar {
+    padding: 0 1rem;
+}
+
+.navbar-brand:hover {
+    color: rgb(58, 87, 168);
+}
+
+#loading {
+    margin-top: 0.75rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #2196f3;
+}
+
+.branding {
+   line-height: 50px;
+   margin: 0;
+}
+
