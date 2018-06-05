@@ -12,6 +12,6 @@ This application is designed to allow the user to quickly and easily scrape news
 
 Links to the live site and short demo are provided below.
 
-[Live site](https://newsbook-cj.herokuapp.com/saved)
+[Live site](https://newsbook-wsj.herokuapp.com/)
 
 [Demo](https://drive.google.com/file/d/1ONvehG-ZDTc-RVe2OkTLmyc7Prpyud8O/view)
